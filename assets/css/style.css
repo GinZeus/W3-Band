@@ -23,10 +23,6 @@ html {
 */
 
 /* Common */
-.clear{
-    clear: both;
-}
-
 .text-white{
     color: #fff !important;
 }
@@ -35,9 +31,43 @@ html {
     text-align: center !important;
 }
 
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn {
+    background: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
 .row{
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -49,6 +79,9 @@ html {
 }
 .col-2 {
     width: 50%;
+}
+.col-1{
+    width: 100%;
 }
 
 /* Main */
@@ -163,7 +196,7 @@ html {
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 
@@ -244,7 +277,6 @@ html {
 }
 .places-list {
    margin-top: 32px;
-   padding-bottom: 48px;
 }
 .place-img {
     display: block;
@@ -270,24 +302,66 @@ html {
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn {
-    background: black;
-    text-decoration: none;
-    color: white;
-    padding: 10px 16px;
-    margin-top: 15px;
+
+
+
+/* Contact form */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* select các thẻ i có class có chứa tên "ti-" */
+.contact-info i[class*="ti-"]{
+    width: 30px;
     display: inline-block;
-    border: none;
-    cursor: pointer;
+}
+
+.contact-form {
     font-size: 15px;
 }
-.place-buy-btn:hover{
-    background-color: #ccc;
-    color: #000;
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 
-#footer {
+.map-section img {
+    width: 100%;
+}
 
+/* footer */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .copyright{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    font-size: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .modal {
